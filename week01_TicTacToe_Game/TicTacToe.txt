@@ -10,6 +10,7 @@
         - Use grid formatting for visual clarity ⭕️
 
      3. isValidMove(int move) --> for checking , int move justify?
+        - bool
         - Check if player input is within valid range (1~9) ⭕️
         - Check if the selected cell is not already taken ⭕️
         - Prevents overwriting existing moves ⭕️
@@ -24,8 +25,21 @@
         - Ensure players take turns properly ?
 
       6. checkWin()
-        - Check if the current player has a winning pattern (rows, cols, diagonals)
-        - Return true if a win is detected
+        - bool
+        - Check if the current player has a winning pattern (rows, cols, diagonals) ⭕
+        - Return true if a win is detected ⭕
+        - Winning Probability :
+            rows -> make 'for statement'
+            1) gameboard[0][0],gameboard[0][1],gameboard[0][2]
+            2) gameboard[1][0],gameboard[1][1],gameboard[1][2]
+            3) gameboard[2][0],gameboard[2][1],gameboard[2][2]
+            cols -> make for statement
+            4) gameboard[0][0],gameboard[1][0],gameboard[2][0]
+            5) gameboard[0][1],gameboard[1][1],gameboard[2][1]
+            6) gameboard[0][2],gameboard[1][2],gameboard[2][2]
+            diagonals
+            7) gameboard[0][0],gameboard[1][1],gameboard[2][2]
+            8) gameboard[0][2],gameboard[1][1],gameboard[2][0]
 
       7. checkDraw()
         - Check if all board cells are filled

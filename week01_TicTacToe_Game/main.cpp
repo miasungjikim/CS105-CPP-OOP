@@ -69,6 +69,34 @@ public:
         }
     }
 
+    bool checkWin(){
+        //rows
+         for(int i = 0; i < 3; i++){
+             if (gameboard[i][0] == currentPlayer &&
+                 gameboard[i][1] == currentPlayer &&
+                 gameboard[i][2] == currentPlayer)
+                 return true;
+        }
+        //cols
+        for (int i =0; i<3; i++) {
+            if (gameboard[0][i] == currentPlayer &&
+                gameboard[1][i] == currentPlayer &&
+                gameboard[2][i] == currentPlayer)
+                return true;
+        }
+
+        //diagonals
+        if (gameboard[0][0] == currentPlayer &&
+            gameboard[1][1] == currentPlayer &&
+            gameboard[2][2] == currentPlayer)
+            return true;
+
+        if (gameboard[0][2] == currentPlayer &&
+            gameboard[1][1] == currentPlayer &&
+            gameboard[2][0] == currentPlayer)
+            return true;
+    }
+
 
 
     void play() {
