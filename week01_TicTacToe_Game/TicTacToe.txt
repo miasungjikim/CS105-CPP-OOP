@@ -1,8 +1,8 @@
 👾 Tic Tac Toe Game – Feature List (group by function name)
     1. resetBoard() - ✅
-        - Initialize the 3x3 game board
-        - Set each cell to a number (1~9)
-        - Used to restart the game or begin a new one
+        - Initialize the 3x3 game board ⭕️
+        - Set each cell to a number (1~9) ⭕️
+        - Used to restart the game or begin a new one ⭕️
 
     2. displayBoard() - ✅
         - Show the current board layout
@@ -15,7 +15,7 @@
         - Prevents overwriting existing moves
 
      4. updateBoard(int move)
-        - Convert the player;s input (1-9) to 2D board position
+        - Convert the player's input (1-9) to 2D board position
         - Update the board with the current player's symbol
         - Keeps the game state consistent
 

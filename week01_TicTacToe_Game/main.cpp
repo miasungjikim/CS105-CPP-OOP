@@ -38,9 +38,23 @@ public:
         }
     }
 
+    bool isValidMove(int move) {
+
+        if (1>move || move > 9) {
+            cout << "Invalid input. Plz enter a number between 1 and 9" << endl;
+            return false;
+        }else if ( ) {
+
+        }else {
+            return true;
+        }
+    }
+
 
 
     void play() {
+        cout << "👾👾👾TicTacToe game👾👾👾" << endl;
+
         resetBoard();
         displayBoard();
     }
