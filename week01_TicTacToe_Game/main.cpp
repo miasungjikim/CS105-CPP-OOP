@@ -39,14 +39,33 @@ public:
     }
 
     bool isValidMove(int move) {
+        int rows = (move-1) / 3;
+        int cols = (move - 1) % 3;
 
         if (1>move || move > 9) {
             cout << "Invalid input. Plz enter a number between 1 and 9" << endl;
             return false;
-        }else if ( ) {
-
+        }else if (gameboard[rows][cols] == 'X' || gameboard[rows][cols] == 'O' ) {
+            cout << "Here is already taken. try again" << endl;
+            return false;
         }else {
             return true;
+        }
+    }
+
+    void updateBoard(int move) {
+        int rows = (move-1) / 3;
+        int cols = (move - 1) % 3;
+
+        gameboard[rows][cols] = currentPlayer;
+
+    }
+
+    void switchPlayer() {
+        if (currentPlayer == 'X') {
+            currentPlayer = 'O';
+        }else {
+            currentPlayer = 'X';
         }
     }
 
@@ -57,6 +76,7 @@ public:
 
         resetBoard();
         displayBoard();
+
     }
 
 
