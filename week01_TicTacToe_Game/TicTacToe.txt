@@ -42,6 +42,7 @@
             8) gameboard[0][2],gameboard[1][1],gameboard[2][0]
 
       7. checkDraw()
+        - bool
         - Check if all board cells are filled
         - Confirm no winner has beed declared
         - Used to detect a draw situation

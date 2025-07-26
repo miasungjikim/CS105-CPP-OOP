@@ -14,8 +14,8 @@ private:
 public:
     //Gameboard (3x3)
     void resetBoard() {
-        gameboard.clear(); //reset gameboard. otherwise, board getting bigger
         char symbolNumber = '1'; // why char ? cuz vector<vector<char>> gameboard
+        gameboard.clear(); //reset gameboard. otherwise, board getting bigger
 
         for (int i =0; i < 3; i ++) {
             vector<char>row;
@@ -95,6 +95,18 @@ public:
             gameboard[1][1] == currentPlayer &&
             gameboard[2][0] == currentPlayer)
             return true;
+    }
+
+    bool checkDraw() {
+        //all board full? false: not full / true : already full as symbols O,X
+        for (int i =0; i <3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (gameboard[i][j] != 'O' && gameboard[i][j] != 'X'){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 
