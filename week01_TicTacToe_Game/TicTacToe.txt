@@ -43,9 +43,9 @@
 
       7. checkDraw()
         - bool
-        - Check if all board cells are filled
-        - Confirm no winner has beed declared
-        - Used to detect a draw situation
+        - Check if all board cells are filled ⭕
+        - Confirm no winner has beed declared -> play ?
+        - Used to detect a draw situation ⭕
 
       8.Play() ⭐️
         - Main loop that runs the game

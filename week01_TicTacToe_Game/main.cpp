@@ -114,9 +114,40 @@ public:
     void play() {
         cout << "👾👾👾TicTacToe game👾👾👾" << endl;
 
-        resetBoard();
-        displayBoard();
+        char playAgain = 'Y';
+        while (playAgain == 'y' || playAgain =='Y') {
+            resetBoard();
+            displayBoard();
 
+            bool gameEnded = false;
+
+            while (!gameEnded) {
+                cout << "It's " << currentPlayer << "turn. Pick a spot (1-9) to place your symbol: " ;
+                int spot;
+                cin >> spot;
+
+                if (isValidMove(spot) == true) {
+                    updateBoard(spot);
+                    displayBoard();
+
+                    //check win?
+                    if (checkWin()) {
+                        cout << currentPlayer << "is win" << endl;
+                        gameEnded = true;
+                    }
+                    else if (checkDraw()) {
+                        cout << "This is game draw" << endl;
+                        gameEnded = true;
+                    }
+                    else {
+                        switchPlayer();
+                    }
+                }
+            }
+            cout << "Play again ? (Y/N): ";
+            cin >> playAgain;
+        }
+        cout << "Game Ended Bye :) " << endl;
     }
 
 
