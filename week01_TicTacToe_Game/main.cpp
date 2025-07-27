@@ -147,7 +147,12 @@ public:
             cout << "Play again ? (Y/N): ";
             cin >> playAgain;
         }
-        cout << "Game Ended Bye :) " << endl;
+        if (playAgain == 'N' || playAgain =='n') {
+            cout << "Game Ended Bye 👋 " << endl;
+        } else {
+            cout << "You click the wrong spell... anyway,, Good Bye 👋" << endl;
+        }
+
     }
 
 
