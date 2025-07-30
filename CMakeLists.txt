@@ -3,4 +3,4 @@ project(CS105_CPP_OOP)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CS105_CPP_OOP week01_TicTacToe_Game/main.cpp)
+add_executable(CS105_CPP_OOP week02_Class/onlineClass.cpp)
