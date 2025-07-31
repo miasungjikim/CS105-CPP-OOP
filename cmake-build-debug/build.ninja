@@ -49,11 +49,11 @@ cmake_ninja_workdir = /Users/mia/105-DevelopmentPrinciplese2/CS105-CPP-OOP/cmake
 
 build cmake_object_order_depends_target_CS105_CPP_OOP: phony || .
 
-build CMakeFiles/CS105_CPP_OOP.dir/week02_Class/onlineClass.cpp.o: CXX_COMPILER__CS105_CPP_OOP_unscanned_Debug /Users/mia/105-DevelopmentPrinciplese2/CS105-CPP-OOP/week02_Class/onlineClass.cpp || cmake_object_order_depends_target_CS105_CPP_OOP
-  DEP_FILE = CMakeFiles/CS105_CPP_OOP.dir/week02_Class/onlineClass.cpp.o.d
+build CMakeFiles/CS105_CPP_OOP.dir/week02_PangramClass/main.cpp.o: CXX_COMPILER__CS105_CPP_OOP_unscanned_Debug /Users/mia/105-DevelopmentPrinciplese2/CS105-CPP-OOP/week02_PangramClass/main.cpp || cmake_object_order_depends_target_CS105_CPP_OOP
+  DEP_FILE = CMakeFiles/CS105_CPP_OOP.dir/week02_PangramClass/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CS105_CPP_OOP.dir
-  OBJECT_FILE_DIR = CMakeFiles/CS105_CPP_OOP.dir/week02_Class
+  OBJECT_FILE_DIR = CMakeFiles/CS105_CPP_OOP.dir/week02_PangramClass
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/CS105_CPP_OOP.dir/week02_Class/onlineClass.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable CS105_CPP_OOP
 
-build CS105_CPP_OOP: CXX_EXECUTABLE_LINKER__CS105_CPP_OOP_Debug CMakeFiles/CS105_CPP_OOP.dir/week02_Class/onlineClass.cpp.o
+build CS105_CPP_OOP: CXX_EXECUTABLE_LINKER__CS105_CPP_OOP_Debug CMakeFiles/CS105_CPP_OOP.dir/week02_PangramClass/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   OBJECT_DIR = CMakeFiles/CS105_CPP_OOP.dir
   POST_BUILD = :
